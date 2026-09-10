@@ -20,4 +20,5 @@ EXPOSE 8000
 
 # gunicorn = production server, clickmart_main.wsgi:application = Django entry point, --bind 0.0.0.0:8000 = external traffic. Reminaing: tuning options
 # A worker is just one instance of your Django app running inside Gunicorn.
-CMD ["gunicorn", "clickmart_main.wsgi:application", "--bind", "0.0.0.0:8000", "--workers", "3" , "--timeout", "180"]
+CMD ["sh", "-c", "python manage.py migrate && gunicorn clickmart_main.wsgi:application --bind 0.0.0.0:8000 --workers 3 --timeout 180"]
+# CMD ["gunicorn", "clickmart_main.wsgi:application", "--bind", "0.0.0.0:8000", "--workers", "3" , "--timeout", "180"]
