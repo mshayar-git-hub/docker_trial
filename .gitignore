@@ -172,8 +172,8 @@ cython_debug/
 #.idea/
 
 # End of https://www.toptal.com/developers/gitignore/api/django
-frontend/Dockerfile
+# frontend/Dockerfile
 backend-drf/.env.docker
 backend-drf/.env.production
-backend-drf/Dockerfile
+# backend-drf/Dockerfile
 docker-compose.yml
