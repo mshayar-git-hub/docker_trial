@@ -2,7 +2,7 @@ import axios from "axios";
 
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { api } from "../api";
+import { api, myBaseUrl } from "../api";
 import useAuth from "./useAuth";
 
 // Flags to handle token refresh

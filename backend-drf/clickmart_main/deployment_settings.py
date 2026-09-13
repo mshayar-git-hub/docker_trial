@@ -21,9 +21,9 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-# CORS_ALLOWED_ORIGINS = [
-#     'http://localhost:5173',
-# ]
+CORS_ALLOWED_ORIGINS = [
+    'https://docker-trial-1.onrender.com',
+]
 
 STORAGES = {
     "default" : {
